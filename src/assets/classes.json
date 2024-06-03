@@ -1,0 +1,396 @@
+[
+    {
+        "name": "Death Knight",
+        "specs": [
+            "Blood - Deathbringer",
+            "Blood - San'layn",
+            "Frost - Deathbringer",
+            "Frost - Rider of the Apocalypse",
+            "Frost - Rider of the Apocalypse",
+            "Unholy - San'layn"
+        ],
+        "races": [
+            "Orc",
+            "Undead",
+            "Tauren",
+            "Troll",
+            "Blood Elf",
+            "Goblin",
+            "Nightborne",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Human",
+            "Dwarf",
+            "Night Elf",
+            "Gnome",
+            "Dranei",
+            "Worgen",
+            "Void Elf",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran",
+            "Mechagnome"
+        ]
+    },
+    {
+        "name": "Demon Hunter",
+        "specs": [
+            "Havoc - Aldrachi Reaver",
+            "Havoc - Fel-scarred",
+            "Vengeance - Aldrachi Reaver",
+            "Vengeance - Fel-scarred"
+        ],
+        "races": [
+            "Blood Elf",
+            "Night Elf"
+        ]
+    },
+    {
+        "name": "Druid",
+        "specs": [
+            "Balance - Elune's Chosen",
+            "Balance - Keeper of the Grove",
+            "Feral - Druid of the Claw",
+            "Feral - Wildstalker",
+            "Guardian - Druid of the Claw",
+            "Guardian - Elune's Chosen",
+            "Restoration - Keeper of the Grove",
+            "Restoration - Wildstalker"
+        ],
+        "races": [
+            "Tauren",
+            "Troll",
+            "Highmountain Tauren",
+            "Zandalari Troll",
+            "Night Elf",
+            "Worgen",
+            "Kul Tiran"
+        ]
+    },
+    {
+        "name": "Evoker",
+        "specs": [
+            "Devatation - Flameshaper",
+            "Devatation - Scalecommander",
+            "Preservation - Chronowarden",
+            "Preservation - Flameshaper",
+            "Augmentation - Chronowarden",
+            "Augmentation - Scalecommander"
+        ],
+        "races": [
+            "Horde Dracthyr",
+            "Alliance Dracthyr"
+        ]
+    },
+    {
+        "name": "Hunter",
+        "specs": [
+            "Beast Master - Dark Ranger",
+            "Beast Master - pack Leader",
+            "Marksmanship - Dark Ranger",
+            "Marksmanship - Sentinel",
+            "Survival - Pack Leader",
+            "Survival - Sentinel"
+        ],
+        "races": [
+            "Orc",
+            "Undead",
+            "Tauren",
+            "Troll",
+            "Blood Elf",
+            "Goblin",
+            "Nightborne",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Human",
+            "Dwarf",
+            "Night Elf",
+            "Gnome",
+            "Dranei",
+            "Worgen",
+            "Void Elf",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran",
+            "Mechagnome"
+        ]
+    },
+    {
+        "name": "Mage",
+        "specs": [
+            "Arcane - Spellslinger",
+            "Arcane - Sunfury",
+            "Fire - Frostfire",
+            "Fire - Sunfury",
+            "Frost - Frostfire",
+            "Frost - Spellslinger"
+        ],
+        "races": [
+            "Orc",
+            "Undead",
+            "Tauren",
+            "Troll",
+            "Blood Elf",
+            "Goblin",
+            "Nightborne",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Human",
+            "Dwarf",
+            "Night Elf",
+            "Gnome",
+            "Dranei",
+            "Worgen",
+            "Void Elf",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran",
+            "Mechagnome"
+        ]
+    },
+    {
+        "name": "Monk",
+        "specs": [
+            "Brewmaster - Master of Harmony",
+            "Brewmaster - Shado-pan",
+            "Mistweaver - Conduit of the Celestials",
+            "Mistweaver - Master of Harmony",
+            "Windwalker - Conduit of the Celestials",
+            "Windwalker - Shado-pan"
+        ],
+        "races": [
+            "Orc",
+            "Undead",
+            "Tauren",
+            "Troll",
+            "Blood Elf",
+            "Goblin",
+            "Nightborne",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Human",
+            "Dwarf",
+            "Night Elf",
+            "Gnome",
+            "Dranei",
+            "Worgen",
+            "Void Elf",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran",
+            "Mechagnome"
+        ]
+    },
+    {
+        "name": "Paladin",
+        "specs": [
+            "Holy - Herald of the Sun",
+            "Holy - Lightsmith",
+            "Protection - Lightsmith",
+            "Protection - Templar",
+            "Retribution - Herald of the Sun",
+            "Retribution - Templar"
+        ],
+        "races": [
+            "Tauren",
+            "Blood Elf",
+            "Zandalari Troll",
+            "Human",
+            "Dwarf",
+            "Dranei",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf"
+        ]
+    },
+    {
+        "name": "Priest",
+        "specs": [
+            "Discipline - Oracle",
+            "Discipline - Voidweaver",
+            "Holy - Archon",
+            "Holy - Oracle",
+            "Shadow - Archon",
+            "Shadow - Voidweaver"
+        ],
+        "races": [
+            "Orc",
+            "Undead",
+            "Tauren",
+            "Troll",
+            "Blood Elf",
+            "Goblin",
+            "Nightborne",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Human",
+            "Dwarf",
+            "Night Elf",
+            "Gnome",
+            "Dranei",
+            "Worgen",
+            "Void Elf",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran",
+            "Mechagnome"
+        ]
+    },
+    {
+        "name": "Rogue",
+        "specs": [
+            "Assassination - Deathstalker",
+            "Assassination - Fatebound",
+            "Outlaw - Fatebound",
+            "Outlaw - Trickster",
+            "Subtlety - Deathstalker",
+            "Subtlety - Trickster"
+        ],
+        "races": [
+            "Orc",
+            "Undead",
+            "Tauren",
+            "Troll",
+            "Blood Elf",
+            "Goblin",
+            "Nightborne",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Human",
+            "Dwarf",
+            "Night Elf",
+            "Gnome",
+            "Dranei",
+            "Worgen",
+            "Void Elf",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran",
+            "Mechagnome"
+        ]
+    },
+    {
+        "name": "Shaman",
+        "specs": [
+            "Elemental - Farseer",
+            "Elemental - Stormbringer",
+            "Enhancement - Stormbringer",
+            "Enhancement - Totemic",
+            "Restoration - Farseer",
+            "Restoration - Totemic"
+        ],
+        "races": [
+            "Orc",
+            "Tauren",
+            "Troll",
+            "Goblin",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Dwarf",
+            "Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran"
+        ]
+    },
+    {
+        "name": "Warlock",
+        "specs": [
+            "Affliction - Hellcaller",
+            "Affliction - Soul Harvester",
+            "Demonology - Diablolist",
+            "Demonology - Soul Harvester",
+            "Destruction - Diablolist",
+            "Destruction - Hellcaller"
+        ],
+        "races": [
+            "Orc",
+            "Undead",
+            "Tauren",
+            "Troll",
+            "Blood Elf",
+            "Goblin",
+            "Nightborne",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Human",
+            "Dwarf",
+            "Night Elf",
+            "Gnome",
+            "Dranei",
+            "Worgen",
+            "Void Elf",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran",
+            "Mechagnome"
+        ]
+    },
+    {
+        "name": "Warrior",
+        "specs": [
+            "Arms - Colossus",
+            "Arms - Slayer",
+            "Fury - Mountain Thane",
+            "Fury - Slayer",
+            "Protection - Colossus",
+            "Protection - Mountain Thane"
+        ],
+        "races": [
+            "Orc",
+            "Undead",
+            "Tauren",
+            "Troll",
+            "Blood Elf",
+            "Goblin",
+            "Nightborne",
+            "Highmountain Tauren",
+            "Mag'har Orc",
+            "Zandalari Troll",
+            "Vulpera",
+            "Horde Pandaren",
+            "Alliance Pandaren",
+            "Human",
+            "Dwarf",
+            "Night Elf",
+            "Gnome",
+            "Dranei",
+            "Worgen",
+            "Void Elf",
+            "Lightforged Dranei",
+            "Dark Iron Dwarf",
+            "Kul Tiran",
+            "Mechagnome"
+        ]
+    }
+]
