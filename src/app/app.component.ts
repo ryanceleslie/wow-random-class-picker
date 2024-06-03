@@ -14,17 +14,17 @@ export class AppComponent {
 
   isResponseShown: boolean = false;
 
-  isRaceLoadShown: boolean = false;
-  isRaceShown: boolean  = false;
+  isRaceLoading: boolean = false;
+  isRaceLoaded: boolean  = false;
 
-  isClassLoadShown: boolean = false;
-  isClassShown: boolean  = false;
+  isClassLoading: boolean = false;
+  isClassLoaded: boolean  = false;
 
-  isSpecLoadShown: boolean = false;
-  isSpecShown: boolean  = false;
+  isSpecLoading: boolean = false;
+  isSpecLoaded: boolean  = false;
 
-  isHeroLoadShown: boolean = false;
-  isHeroShown: boolean  = false;
+  isHeroLoading: boolean = false;
+  isHeroLoaded: boolean  = false;
 
   classes: any;
   url: string = '../assets/classes.json';
@@ -38,11 +38,6 @@ export class AppComponent {
     fetch(this.url).then(response => response.json())
       .then(results => {
 
-        this.isResponseShown = true;
-        this.isRaceLoadShown = true;
-        
-
-
 
         this.classes = results;
 
@@ -53,28 +48,35 @@ export class AppComponent {
         this.randomHero = this.randomSpec.hero[Math.floor(Math.random() * this.randomSpec.hero.length)];
 
         this.randomRace = this.randomClass.races[Math.floor(Math.random() * this.randomClass.races.length)];
+        
+        this.isResponseShown = true;
+
+        this.isRaceLoading = true;
 
         setTimeout(() => {
-          this.isRaceLoadShown = false;
-          this.isRaceShown = true;
-          this.isClassLoadShown = true;
+          this.isRaceLoading = false;
+          this.isRaceLoaded = true;
+          
+          this.isClassLoading = true;
         }, 2000);
 
         setTimeout(() => {
-          this.isClassLoadShown = false;
-          this.isClassShown = true;
-          this.isSpecLoadShown = true;
+          this.isClassLoading = false;
+          this.isClassLoaded = true;
+
+          this.isSpecLoading = true;
         }, 4000);
 
         setTimeout(() => {
-          this.isSpecLoadShown = false;
-          this.isSpecShown = true;
-          this.isHeroLoadShown = true;
+          this.isSpecLoading = false;
+          this.isSpecLoaded = true;
+
+          this.isHeroLoading = true;
         }, 6000);
 
         setTimeout(() => {
-          this.isHeroLoadShown = false;
-          this.isHeroShown = true;
+          this.isHeroLoading = false;
+          this.isHeroLoaded = true;
         }, 8000);
       });
 
