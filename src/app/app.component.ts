@@ -35,6 +35,11 @@ export class AppComponent {
   randomRace: any;
 
   getRandomSelection() {
+    this.isRaceLoaded = false;
+    this.isClassLoaded = false;
+    this.isSpecLoaded = false;
+    this.isHeroLoaded = false;
+
     fetch(this.url).then(response => response.json())
       .then(results => {
 
