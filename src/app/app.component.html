@@ -8,18 +8,54 @@
         <button (click)="getRandomSelection()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tell me what to play!</button>
       </div>
       
-      <div class="flex flex-col items-center pb-10">
-        <img class="h-16 mt-3 shadow-lg transition delay-300 duration-300" src="{{ randomClass.icon }}" onerror="this.style.display='none'"/>
-        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white transition delay-500 duration-300">{{ randomSpec }}</h5>
-        <h5 class="mb-1 text-xl font-medium text-gray-900 dark:text-white transition delay-1000 duration-300">{{ randomRace }}</h5>
+      <div class="flex flex-col items-center pt-10 pb-10" *ngIf="isShown">
+
+        <!-- Race -->
+        <div class="flex flex-col w-6/12 p-5 mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          <div class="w-24">
+            <img class="rounded-t-lg h-24" src="{{ randomRace.icon }}" onerror="this.style.display='none'">
+          </div>
+
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomRace.name }}</h5>
+          </div>
+        </div>
+
+        <!-- Class -->
+        <div class="flex flex-col w-6/12 p-5 mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          <div class="w-24">
+            <img class="rounded-t-lg h-24" src="{{ randomClass.icon }}" onerror="this.style.display='none'">
+          </div>
+
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomClass.name }}</h5>
+          </div>
+        </div>
+
+        <!-- Spec -->
+        <div class="flex flex-col w-6/12 p-5 mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          <div class="w-24">
+            <img class="rounded-t-lg h-24" src="{{ randomSpec.icon }}" onerror="this.style.display='none'">
+          </div>
+
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomSpec.name }}</h5>
+          </div>
+        </div>
+
+        <!-- Hero -->
+        <div class="flex flex-col w-6/12 p-5 mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          <div class="w-24">
+            <img class="rounded-t-lg h-24" src="assets/war-within-logo.png" onerror="this.style.display='none'">
+          </div>
+
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomHero }}</h5>
+          </div>
+        </div>
       </div>
     </div>
-
   </div>
-
 </main>
-
-
-
 
 <router-outlet />
