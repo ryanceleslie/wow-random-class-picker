@@ -1,6 +1,7 @@
 [
     {
         "name": "Death Knight",
+        "icon": "assets/icons/spell_deathknight_classicon.jpg",
         "specs": [
             "Blood - Deathbringer",
             "Blood - San'layn",
@@ -38,6 +39,7 @@
     },
     {
         "name": "Demon Hunter",
+        "icon": "assets/icons/classicon_demonhunter.jpg",
         "specs": [
             "Havoc - Aldrachi Reaver",
             "Havoc - Fel-scarred",
@@ -51,6 +53,7 @@
     },
     {
         "name": "Druid",
+        "icon": "assets/icons/classicon_druid.jpg",
         "specs": [
             "Balance - Elune's Chosen",
             "Balance - Keeper of the Grove",
@@ -73,9 +76,10 @@
     },
     {
         "name": "Evoker",
+        "icon": "assets/icons/classicon_evoker.jpg",
         "specs": [
-            "Devatation - Flameshaper",
-            "Devatation - Scalecommander",
+            "Devastation - Flameshaper",
+            "Devastation - Scalecommander",
             "Preservation - Chronowarden",
             "Preservation - Flameshaper",
             "Augmentation - Chronowarden",
@@ -88,6 +92,7 @@
     },
     {
         "name": "Hunter",
+        "icon": "assets/icons/classicon_hunter.jpg",
         "specs": [
             "Beast Master - Dark Ranger",
             "Beast Master - pack Leader",
@@ -125,6 +130,7 @@
     },
     {
         "name": "Mage",
+        "icon": "assets/icons/classicon_mage.jpg",
         "specs": [
             "Arcane - Spellslinger",
             "Arcane - Sunfury",
@@ -162,6 +168,7 @@
     },
     {
         "name": "Monk",
+        "icon": "assets/icons/classicon_monk.jpg",
         "specs": [
             "Brewmaster - Master of Harmony",
             "Brewmaster - Shado-pan",
@@ -199,6 +206,7 @@
     },
     {
         "name": "Paladin",
+        "icon": "assets/icons/classicon_paladin.jpg",
         "specs": [
             "Holy - Herald of the Sun",
             "Holy - Lightsmith",
@@ -220,6 +228,7 @@
     },
     {
         "name": "Priest",
+        "icon": "assets/icons/classicon_priest.jpg",
         "specs": [
             "Discipline - Oracle",
             "Discipline - Voidweaver",
@@ -257,6 +266,7 @@
     },
     {
         "name": "Rogue",
+        "icon": "assets/icons/classicon_rogue.jpg",
         "specs": [
             "Assassination - Deathstalker",
             "Assassination - Fatebound",
@@ -294,6 +304,7 @@
     },
     {
         "name": "Shaman",
+        "icon": "assets/icons/classicon_shaman.jpg",
         "specs": [
             "Elemental - Farseer",
             "Elemental - Stormbringer",
@@ -321,6 +332,7 @@
     },
     {
         "name": "Warlock",
+        "icon": "assets/icons/classicon_warlock.jpg",
         "specs": [
             "Affliction - Hellcaller",
             "Affliction - Soul Harvester",
@@ -358,6 +370,7 @@
     },
     {
         "name": "Warrior",
+        "icon": "assets/icons/classicon_warrior.jpg",
         "specs": [
             "Arms - Colossus",
             "Arms - Slayer",
