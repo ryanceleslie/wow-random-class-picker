@@ -1,7 +1,7 @@
 
 <main class="main bg-gray-600">
   <div class="h-screen flex items-center justify-center">
-    <div class="w-9/12 p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <div class="w-6/12 p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
       <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Random Class Selector!</h5>
       <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Click the button below to select a random class, spec, hero talents, and race!</p>
       <div class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
@@ -11,46 +11,38 @@
       <div class="flex flex-col items-center pt-10 pb-10" *ngIf="isShown">
 
         <!-- Race -->
-        <div class="flex flex-col w-6/12 p-5 mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
-          <div class="w-24">
-            <img class="rounded-t-lg h-24" src="{{ randomRace.icon }}" onerror="this.style.display='none'">
-          </div>
+        <div class="transition delay-150 flex flex-col w-9/12 p-2 mb-5 lg:p-5 lg:mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          <img class="rounded-t-lg h-12 lg:h-24 lg:w-24" src="{{ randomRace.icon }}" onerror="this.style.display='none'">
 
           <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomRace.name }}</h5>
+              <h5 class="mb-2 text-lg lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomRace.name }}</h5>
           </div>
         </div>
 
         <!-- Class -->
-        <div class="flex flex-col w-6/12 p-5 mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
-          <div class="w-24">
-            <img class="rounded-t-lg h-24" src="{{ randomClass.icon }}" onerror="this.style.display='none'">
-          </div>
+        <div class="transition delay-150 flex flex-col w-9/12 p-2 mb-5 lg:p-5 lg:mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          <img class="rounded-t-lg h-12 lg:h-24 lg:w-24" src="{{ randomClass.icon }}" onerror="this.style.display='none'">
 
           <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomClass.name }}</h5>
+              <h5 class="mb-2 text-lg lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomClass.name }}</h5>
           </div>
         </div>
 
         <!-- Spec -->
-        <div class="flex flex-col w-6/12 p-5 mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
-          <div class="w-24">
-            <img class="rounded-t-lg h-24" src="{{ randomSpec.icon }}" onerror="this.style.display='none'">
-          </div>
+        <div class="transition delay-150 flex flex-col w-9/12 p-2 mb-5 lg:p-5 lg:mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          <img class="rounded-t-lg h-12 lg:h-24 lg:w-24" src="{{ randomSpec.icon }}" onerror="this.style.display='none'">
 
           <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomSpec.name }}</h5>
+              <h5 class="mb-2 text-lg lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomSpec.name }}</h5>
           </div>
         </div>
 
         <!-- Hero -->
-        <div class="flex flex-col w-6/12 p-5 mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
-          <div class="w-24">
-            <img class="rounded-t-lg h-24" src="assets/war-within-logo.png" onerror="this.style.display='none'">
-          </div>
+        <div class="transition delay-150 flex flex-col w-9/12 p-2 mb-5 lg:p-5 lg:mb-10 items-center bg-white rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-900 dark:hover:bg-gray-700">
+          <img class="rounded-t-lg h-12 lg:h-24 lg:w-24" src="assets/war-within-logo.png" onerror="this.style.display='none'">
 
           <div class="flex flex-col justify-between p-4 leading-normal">
-              <h5 class="mb-2 text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomHero }}</h5>
+              <h5 class="mb-2 text-lg lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-white">{{ randomHero }}</h5>
           </div>
         </div>
       </div>
