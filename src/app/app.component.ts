@@ -12,6 +12,25 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'Random Class Picker!';
 
+  tankFilter:boolean = true;
+  meleedpsFilter:boolean = true;
+  rangedpsFilter:boolean = true;
+  healerFilter:boolean = true;
+
+  deathknightFilter:boolean = true;
+  demonhunterFilter:boolean = true;
+  druidFilter:boolean = true;
+  evokerFilter:boolean = true;
+  hunterFilter:boolean = true;
+  mageFilter:boolean = true;
+  monkFilter:boolean = true;
+  paladinFilter:boolean = true;
+  priestFilter:boolean = true;
+  rogueFilter:boolean = true;
+  shamanFilter:boolean = true;
+  warlockFilter:boolean = true;
+  warriorFilter:boolean = true;
+
   isResponseShown: boolean = false;
 
   isRaceLoading: boolean = false;
@@ -34,7 +53,39 @@ export class AppComponent {
   randomHero: any;
   randomRace: any;
 
+  removeRole(keep:boolean, role:string, classes:any){
+    if (!keep) {
+      classes.forEach((c:any) => {
+        c.specs = c.specs.filter((s:any) =>  {
+          return s.role !== role;
+        });
+      });
+
+      // remove pure classes
+      if (role == "meleedps") {
+        classes = this.removeClass(false, "Rogue", classes);
+      }
+      if (role == "rangedps") {
+        classes = this.removeClass(false, "Mage", classes);
+        classes = this.removeClass(false, "Warlock", classes);
+      }
+    }
+
+    return classes;
+  }
+
+  removeClass(keep:boolean, name:string, classes:any){
+    if (!keep) {
+      classes = classes.filter((c:any) =>  {
+        return c.name !== name;
+      });
+    }
+
+    return classes;
+  }
+
   getRandomSelection() {
+    // Reset boxes
     this.isRaceLoaded = false;
     this.isClassLoaded = false;
     this.isSpecLoaded = false;
@@ -44,24 +95,45 @@ export class AppComponent {
       .then(results => {
 
 
+        // based on filters do another search, there's a better way to do this I am sure, but I can't find it right now
+        results = this.removeRole(this.tankFilter, 'tank', results);
+        results = this.removeRole(this.meleedpsFilter, 'meleedps', results);
+        results = this.removeRole(this.rangedpsFilter, 'rangedps', results);
+        results = this.removeRole(this.healerFilter, 'healer', results);
+        
+        // remove by class
+        results = this.removeClass(this.deathknightFilter, "Death Knight", results);
+        results = this.removeClass(this.demonhunterFilter, "Demon Hunter", results);
+        results = this.removeClass(this.druidFilter, "Druid", results);
+        results = this.removeClass(this.evokerFilter, "Evoker", results);
+        results = this.removeClass(this.hunterFilter, "Hunter", results);
+        results = this.removeClass(this.mageFilter, "Mage", results);
+        results = this.removeClass(this.monkFilter, "Monk", results);
+        results = this.removeClass(this.paladinFilter, "Paladin", results);
+        results = this.removeClass(this.priestFilter, "Priest", results);
+        results = this.removeClass(this.rogueFilter, "Rogue", results);
+        results = this.removeClass(this.shamanFilter, "Shaman", results);
+        results = this.removeClass(this.warlockFilter, "Warlock", results);
+        results = this.removeClass(this.warriorFilter, "Warrior", results);
+        
+
+        // Choose random optuons
         this.classes = results;
 
         this.randomClass = this.classes[Math.floor(Math.random() * this.classes.length)];
-
         this.randomSpec = this.randomClass.specs[Math.floor(Math.random() * this.randomClass.specs.length)];
-
         this.randomHero = this.randomSpec.hero[Math.floor(Math.random() * this.randomSpec.hero.length)];
-
         this.randomRace = this.randomClass.races[Math.floor(Math.random() * this.randomClass.races.length)];
-        
-        this.isResponseShown = true;
 
+        // Start the display feature
+        this.isResponseShown = true;
         this.isRaceLoading = true;
 
         setTimeout(() => {
           this.isRaceLoading = false;
           this.isRaceLoaded = true;
           
+          // 'load' next step
           this.isClassLoading = true;
         }, 2000);
 
@@ -69,6 +141,7 @@ export class AppComponent {
           this.isClassLoading = false;
           this.isClassLoaded = true;
 
+          // 'load' next step
           this.isSpecLoading = true;
         }, 4000);
 
@@ -76,6 +149,7 @@ export class AppComponent {
           this.isSpecLoading = false;
           this.isSpecLoaded = true;
 
+          // 'load' next step
           this.isHeroLoading = true;
         }, 6000);
 
