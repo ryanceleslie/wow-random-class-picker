@@ -43,7 +43,7 @@
         ],
         "races": [
             { "name": "Blood Elf", "faction": "horde", "icon":"assets/race-icons/Icon_of_Blood.png"},
-            { "name": "Night Elf", "icon":"assets/race-icons/Night_Elf_Crest.png"}
+            { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"}
         ]
     },
     {
