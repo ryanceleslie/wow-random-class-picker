@@ -212,32 +212,32 @@
 
 
         <!-- Previous entries -->
-        <div class="mt-10 w-9/12 p-4 border rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700" *ngIf="isPreviousEntriesLoaded">
+        <div class="mt-10 w-9/12 p-4 border rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700" *ngIf="isAllEntriesLoaded">
           <div class="flex justify-between mb-4">
-            <h5 class="text-xl font-bold leading-none text-gray-300">Previous Entries</h5>
+            <h5 class="text-xl font-bold leading-none text-gray-300">All Entries</h5>
           </div>
 
           <div class="flow-root">
             <ul role="list" class="divide-y divide-gray-700">
-              <li class="py-3 sm:py-4 text-sm" *ngFor="let previousEntry of previousEntries">
+              <li class="py-3 sm:py-4 text-sm" *ngFor="let allEntry of allEntries">
                 <div class="flex">
                   <div class="flex-shrink-0">
-                      <img class="rounded-full bg-gray-500 h-10 lg:h-18 lg:w-18" src="{{ previousEntry.icon }}">
+                      <img class="rounded-full bg-gray-500 h-10 lg:h-18 lg:w-18" src="{{ allEntry.icon }}">
                   </div>
                   <div class="flex-1">
                     <p class="font-medium text-gray-300">
-                      {{ previousEntry.class }}
+                      {{ allEntry.class }}
                     </p>
                     <p class="text-gray-400">
-                      {{ previousEntry.race }}
+                      {{ allEntry.race }}
                     </p>
                   </div>
                   <div class="flex-1 ">
                     <p class="font-medium text-gray-300">
-                      {{ previousEntry.spec }}
+                      {{ allEntry.spec }}
                     </p>
                     <p class="text-gray-400">
-                      {{ previousEntry.hero }}
+                      {{ allEntry.hero }}
                     </p>
                   </div>
                 </div>

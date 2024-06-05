@@ -47,7 +47,8 @@ export class AppComponent {
   isHeroLoading: boolean = false;
   isHeroLoaded: boolean  = false;
 
-  isPreviousEntriesLoaded: boolean = false;
+  isAllEntriesLoaded: boolean = false;
+  allEntries: any;
 
   classes: any;
   url: string = '../assets/classes.json';
@@ -57,7 +58,6 @@ export class AppComponent {
   randomHero: any;
   randomRace: any;
 
-  previousEntries: any;
 
   removeRole(keep:boolean, role:string, classes:any){
     if (!keep) {
@@ -122,33 +122,6 @@ export class AppComponent {
       alert('Select at least one class');
       return;
     }
-
-    // add to prevous entries
-    if (this.previousEntries === undefined){
-      this.previousEntries = [{
-        "icon": "",
-        "class": "",
-        "race": "",
-        "spec": "",
-        "hero": ""
-      }];
-    }
-    else {
-      // show previous entries
-      this.isPreviousEntriesLoaded = true;
-      this.previousEntries.push({
-        "icon": this.randomClass.icon,
-        "class": this.randomClass.name,
-        "race": this.randomRace.name,
-        "spec": this.randomSpec.name,
-        "hero": this.randomHero
-      });
-    }
-
-    // it's late and I can't figure out a better way to do the above code for previous entries
-    this.previousEntries = this.previousEntries.filter((e:any) =>  {
-      return e.icon !== "";
-    })
 
     fetch(this.url).then(response => response.json())
       .then(results => {
@@ -219,6 +192,31 @@ export class AppComponent {
           this.isHeroLoading = false;
           this.isHeroLoaded = true;
         }, 8000);
+
+        setTimeout(() => {
+          // add to all entries
+          if (this.allEntries === undefined){
+            // show previous entries
+            this.isAllEntriesLoaded = true;
+            this.allEntries = [{
+              "icon": this.randomClass.icon,
+              "class": this.randomClass.name,
+              "race": this.randomRace.name,
+              "spec": this.randomSpec.name,
+              "hero": this.randomHero
+            }];
+          }
+          else {
+            this.allEntries.push({
+              "icon": this.randomClass.icon,
+              "class": this.randomClass.name,
+              "race": this.randomRace.name,
+              "spec": this.randomSpec.name,
+              "hero": this.randomHero
+            });
+          }
+        }, 10000);
+
       });
   }
 }
