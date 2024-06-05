@@ -203,7 +203,7 @@ export class AppComponent {
               "class": this.randomClass.name,
               "race": this.randomRace.name,
               "spec": this.randomSpec.name,
-              "hero": this.randomHero
+              "hero": this.randomHero.name
             }];
           }
           else {
@@ -212,7 +212,7 @@ export class AppComponent {
               "class": this.randomClass.name,
               "race": this.randomRace.name,
               "spec": this.randomSpec.name,
-              "hero": this.randomHero
+              "hero": this.randomHero.name
             });
           }
         }, 10000);
