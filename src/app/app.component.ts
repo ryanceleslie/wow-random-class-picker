@@ -16,6 +16,8 @@ export class AppComponent {
   meleedpsFilter:boolean = true;
   rangedpsFilter:boolean = true;
   healerFilter:boolean = true;
+  allianceFilter:boolean = true;
+  hordeFilter:boolean = true;
 
   deathknightFilter:boolean = true;
   demonhunterFilter:boolean = true;
@@ -45,6 +47,8 @@ export class AppComponent {
   isHeroLoading: boolean = false;
   isHeroLoaded: boolean  = false;
 
+  isPreviousEntriesLoaded: boolean = false;
+
   classes: any;
   url: string = '../assets/classes.json';
 
@@ -52,6 +56,8 @@ export class AppComponent {
   randomSpec: any;
   randomHero: any;
   randomRace: any;
+
+  previousEntries: any;
 
   removeRole(keep:boolean, role:string, classes:any){
     if (!keep) {
@@ -69,6 +75,18 @@ export class AppComponent {
         classes = this.removeClass(false, "Mage", classes);
         classes = this.removeClass(false, "Warlock", classes);
       }
+    }
+
+    return classes;
+  }
+
+  removeFaction(keep:boolean, faction:string, classes:any){
+    if (!keep){
+      classes.forEach((c:any) => {
+        c.races = c.races.filter((s:any) =>  {
+          return s.faction !== faction;
+        });
+      });
     }
 
     return classes;
@@ -105,6 +123,33 @@ export class AppComponent {
       return;
     }
 
+    // add to prevous entries
+    if (this.previousEntries === undefined){
+      this.previousEntries = [{
+        "icon": "",
+        "class": "",
+        "race": "",
+        "spec": "",
+        "hero": ""
+      }];
+    }
+    else {
+      // show previous entries
+      this.isPreviousEntriesLoaded = true;
+      this.previousEntries.push({
+        "icon": this.randomClass.icon,
+        "class": this.randomClass.name,
+        "race": this.randomRace.name,
+        "spec": this.randomSpec.name,
+        "hero": this.randomHero
+      });
+    }
+
+    // it's late and I can't figure out a better way to do the above code for previous entries
+    this.previousEntries = this.previousEntries.filter((e:any) =>  {
+      return e.icon !== "";
+    })
+
     fetch(this.url).then(response => response.json())
       .then(results => {
 
@@ -114,6 +159,9 @@ export class AppComponent {
         results = this.removeRole(this.meleedpsFilter, 'meleedps', results);
         results = this.removeRole(this.rangedpsFilter, 'rangedps', results);
         results = this.removeRole(this.healerFilter, 'healer', results);
+
+        results = this.removeFaction(this.allianceFilter, "alliance", results);
+        results = this.removeFaction(this.hordeFilter, "horde", results);
         
         // remove by class
         results = this.removeClass(this.deathknightFilter, "Death Knight", results);
@@ -172,6 +220,5 @@ export class AppComponent {
           this.isHeroLoaded = true;
         }, 8000);
       });
-
   }
 }

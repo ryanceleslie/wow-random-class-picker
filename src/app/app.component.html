@@ -10,33 +10,48 @@
       <div>
         <p class="text-base text-gray-400 sm:text-lg">Unselect any option to remove from random generator</p>
 
-        <div class="mt-5 inline-flex rounded-md shadow-sm" role="group">
+        <!-- Role and faction filters-->
+        <div class="my-5 flex flex-wrap justify-center" role="group">
           <!-- Tank -->
           <div class="flex">
             <input #checkbox type="checkbox" id="tankFilter" class="peer hidden" (change)="tankFilter = !tankFilter" [checked]="tankFilter"/>
-            <label for="tankFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
-              peer-checked:bg-gray-700"><img class="h-5" src="../assets/role-icons/tank_icon.png" /> Tank</label>
+            <label for="tankFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700
+              peer-checked:bg-gray-700"><img class="h-5 mr-1" src="../assets/role-icons/tank_icon.png" /> Tank</label>
           </div>
 
           <!-- Melee DPS -->
           <div class="flex">
             <input type="checkbox" id="meleedpsFilter" class="peer hidden" (change)="meleedpsFilter = !meleedpsFilter" [checked]="meleedpsFilter"/>
-            <label for="meleedpsFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
-              peer-checked:bg-gray-700"><img class="h-5" src="../assets/role-icons/dps_icon.png" /> Melee DPS</label>
+            <label for="meleedpsFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 
+              peer-checked:bg-gray-700"><img class="h-5 mr-1" src="../assets/role-icons/dps_icon.png" /> Melee DPS</label>
           </div>
 
           <!-- Range DPS -->
           <div class="flex">
             <input type="checkbox" id="rangedpsFilter" class="peer hidden" (change)="rangedpsFilter = !rangedpsFilter" [checked]="rangedpsFilter"/>
-            <label for="rangedpsFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
-                peer-checked:bg-gray-700"><img class="h-5" src="../assets/role-icons/dps_icon.png" /> Range DPS</label>
+            <label for="rangedpsFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 
+                peer-checked:bg-gray-700"><img class="h-5 mr-1" src="../assets/role-icons/dps_icon.png" /> Range DPS</label>
           </div>
 
           <!-- Healer -->
           <div class="flex">
             <input type="checkbox" id="healerFilter" class="peer hidden" (change)="healerFilter = !healerFilter" [checked]="healerFilter"/>
-            <label for="healerFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-white bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
-              peer-checked:bg-gray-700"><img class="h-5" src="../assets/role-icons/healer_icon.png" />Healer</label>
+            <label for="healerFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 
+              peer-checked:bg-gray-700"><img class="h-5 mr-1" src="../assets/role-icons/healer_icon.png" />Healer</label>
+          </div>
+
+          <!-- Alliance -->
+          <div class="flex">
+            <input type="checkbox" id="allianceFilter" class="peer hidden" (change)="allianceFilter = !allianceFilter" [checked]="allianceFilter"/>
+            <label for="allianceFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 
+              peer-checked:bg-gray-700"><img class="h-5 mr-1" src="../assets/race-icons/alliance.png" />Alliance</label>
+          </div>
+
+          <!-- Horde -->
+          <div class="flex">
+            <input type="checkbox" id="hordeFilter" class="peer hidden" (change)="hordeFilter = !hordeFilter" [checked]="hordeFilter"/>
+            <label for="hordeFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-gray-300 bg-gray-800 border border-gray-700 
+              peer-checked:bg-gray-700"><img class="h-5 mr-1" src="../assets/race-icons/horde.png" />Horde</label>
           </div>
         </div>
 
@@ -45,67 +60,67 @@
           
           <div class="flex">
             <input type="checkbox" id="deathknightFilter" class="peer hidden" (change)="deathknightFilter = !deathknightFilter" [checked]="deathknightFilter"/>
-            <label for="deathknightFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-deathknight bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="deathknightFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-deathknight bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Death Knight</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="demonhunterFilter" class="peer hidden" (change)="demonhunterFilter = !demonhunterFilter" [checked]="demonhunterFilter"/>
-            <label for="demonhunterFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-demonhunter bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="demonhunterFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-demonhunter bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Demon Hunter</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="druidFilter" class="peer hidden" (change)="druidFilter = !druidFilter" [checked]="druidFilter"/>
-            <label for="druidFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-druid bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="druidFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-druid bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Druid</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="evokerFilter" class="peer hidden" (change)="evokerFilter = !evokerFilter" [checked]="evokerFilter"/>
-            <label for="evokerFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-evoker bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="evokerFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-evoker bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Evoker</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="hunterFilter" class="peer hidden" (change)="hunterFilter = !hunterFilter" [checked]="hunterFilter"/>
-            <label for="hunterFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-hunter bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="hunterFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-hunter bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Hunter</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="mageFilter" class="peer hidden" (change)="mageFilter = !mageFilter" [checked]="mageFilter"/>
-            <label for="mageFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-mage bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="mageFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-mage bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Mage</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="monkFilter" class="peer hidden" (change)="monkFilter = !monkFilter" [checked]="monkFilter"/>
-            <label for="monkFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-monk bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="monkFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-monk bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Monk</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="paladinFilter" class="peer hidden" (change)="paladinFilter = !paladinFilter" [checked]="paladinFilter"/>
-            <label for="paladinFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-paladin bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="paladinFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-paladin bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Paladin</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="priestFilter" class="peer hidden" (change)="priestFilter = !priestFilter" [checked]="priestFilter"/>
-            <label for="priestFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-priest bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="priestFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-priest bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Priest</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="rogueFilter" class="peer hidden" (change)="rogueFilter = !rogueFilter" [checked]="rogueFilter"/>
-            <label for="rogueFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-rogue bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="rogueFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-rogue bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Rogue</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="shamanFilter" class="peer hidden" (change)="shamanFilter = !shamanFilter" [checked]="shamanFilter"/>
-            <label for="shamanFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-shaman bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="shamanFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-shaman bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Shaman</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="warlockFilter" class="peer hidden" (change)="warlockFilter = !warlockFilter" [checked]="warlockFilter"/>
-            <label for="warlockFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-warlock bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="warlockFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-warlock bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Warlock</label>
           </div>
           <div class="flex">
             <input type="checkbox" id="warriorFilter" class="peer hidden" (change)="warriorFilter = !warriorFilter" [checked]="warriorFilter"/>
-            <label for="warriorFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-warrior bg-gray-800 border border-gray-700 hover:bg-gray-700 hover:text-white
+            <label for="warriorFilter" class="select-none cursor-pointer flex justify-center m-1 px-4 py-2 text-sm font-medium text-warrior bg-gray-800 border border-gray-700 
               peer-checked:bg-gray-700">Warrior</label>
           </div>
         </div>
@@ -132,7 +147,7 @@
               </div>
           </h5>
           
-          <img class="h-12 lg:h-20 lg:w-20" src="{{ randomRace.icon }}" onerror="this.style.display='none'" *ngIf="isRaceLoaded">
+          <img class="rounded-full bg-gray-500 h-12 lg:h-20 lg:w-20" src="{{ randomRace.icon }}" onerror="this.style.display='none'" *ngIf="isRaceLoaded">
 
           <div class="flex flex-col p-1 lg:p-4" *ngIf="isRaceLoaded">
               <h5 class="text-lg lg:text-3xl font-bold tracking-tight text-gray-300">{{ randomRace.name }}</h5>
@@ -151,7 +166,7 @@
               </div>
           </h5>
 
-          <img class="h-12 lg:h-20 lg:w-20" src="{{ randomClass.icon }}" onerror="this.style.display='none'" *ngIf="isClassLoaded">
+          <img class="rounded-full bg-gray-500 h-12 lg:h-20 lg:w-20" src="{{ randomClass.icon }}" onerror="this.style.display='none'" *ngIf="isClassLoaded">
 
           <div class="flex flex-col p-1 lg:p-4" *ngIf="isClassLoaded">
               <h5 class="text-lg lg:text-3xl font-bold tracking-tight text-gray-300">{{ randomClass.name }}</h5>
@@ -170,7 +185,7 @@
               </div>
           </h5>
 
-          <img class="rounded-full h-12 lg:h-20 lg:w-20" src="{{ randomSpec.icon }}" onerror="this.style.display='none'" *ngIf="isSpecLoaded">
+          <img class="rounded-full bg-gray-500 h-12 lg:h-20 lg:w-20" src="{{ randomSpec.icon }}" onerror="this.style.display='none'" *ngIf="isSpecLoaded">
 
           <div class="flex flex-col p-1 lg:p-4" *ngIf="isSpecLoaded">
               <h5 class="text-lg lg:text-3xl font-bold tracking-tight text-gray-300">{{ randomSpec.name }}</h5>
@@ -188,13 +203,50 @@
                 <span class="pl-2 text-gray-400">Let's be a hero...</span>
               </div>
           </h5>
-          <img class="h-12 lg:h-20 lg:w-20" src="assets/war-within-logo.png" onerror="this.style.display='none'" *ngIf="isHeroLoaded">
+          <img class="rounded-full bg-gray-500 h-12 lg:h-20 lg:w-20" src="assets/war-within-logo.png" onerror="this.style.display='none'" *ngIf="isHeroLoaded">
 
           <div class="flex flex-col p-1 lg:p-4" *ngIf="isHeroLoaded">
               <h5 class="text-lg lg:text-3xl font-bold tracking-tight text-gray-300">{{ randomHero }}</h5>
           </div>
         </div>
+
+
+        <!-- Previous entries -->
+        <div class="mt-10 w-9/12 p-4 border rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700" *ngIf="isPreviousEntriesLoaded">
+          <div class="flex justify-between mb-4">
+            <h5 class="text-xl font-bold leading-none text-gray-300">Previous Entries</h5>
+          </div>
+
+          <div class="flow-root">
+            <ul role="list" class="divide-y divide-gray-700">
+              <li class="py-3 sm:py-4 text-sm" *ngFor="let previousEntry of previousEntries">
+                <div class="flex">
+                  <div class="flex-shrink-0">
+                      <img class="rounded-full bg-gray-500 h-10 lg:h-18 lg:w-18" src="{{ previousEntry.icon }}">
+                  </div>
+                  <div class="flex-1">
+                    <p class="font-medium text-gray-300">
+                      {{ previousEntry.class }}
+                    </p>
+                    <p class="text-gray-400">
+                      {{ previousEntry.race }}
+                    </p>
+                  </div>
+                  <div class="flex-1 ">
+                    <p class="font-medium text-gray-300">
+                      {{ previousEntry.spec }}
+                    </p>
+                    <p class="text-gray-400">
+                      {{ previousEntry.hero }}
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+
     </div>
   </div>
 </main>
