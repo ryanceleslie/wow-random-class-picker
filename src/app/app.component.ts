@@ -91,6 +91,20 @@ export class AppComponent {
     this.isSpecLoaded = false;
     this.isHeroLoaded = false;
 
+    // validation
+    if(!this.tankFilter && !this.meleedpsFilter && !this.rangedpsFilter && !this.healerFilter){
+      alert('Select at least one role');
+      return;
+    }
+
+    if (!this.deathknightFilter && !this.demonhunterFilter && !this.druidFilter && !this.evokerFilter 
+      && !this.hunterFilter && !this.mageFilter && !this.monkFilter && !this.paladinFilter 
+      && !this.priestFilter && !this.rogueFilter && !this.shamanFilter && !this.warlockFilter 
+      && !this.warriorFilter) {
+      alert('Select at least one class');
+      return;
+    }
+
     fetch(this.url).then(response => response.json())
       .then(results => {
 
