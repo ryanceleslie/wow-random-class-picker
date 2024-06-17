@@ -3,9 +3,9 @@
         "name": "Death Knight",
         "icon": "assets/class-icons/Death_Knight_Crest.png",
         "specs": [
-            {"name":"Blood", "role":"tank", "icon":"assets/spec-icons/spec-portrait-death-knight-blood.jpg", "hero":[{"name": "Deathbringer", "icon":"assets/hero-icons/deathbringer.png"}, { "name": "San'layn", "icon":"assets/hero-icons/sanlayn.png"}]},
+            {"name":"Blood", "role":"tank", "icon":"assets/spec-icons/spec-portrait-death-knight-blood.jpg", "hero":[{"name": "Deathbringer", "icon":"assets/hero-icons/deathbringer.png"}, { "name": "Sanlayn", "icon":"assets/hero-icons/sanlayn.png"}]},
             {"name":"Frost", "role":"meleedps", "icon":"assets/spec-icons/spec-portrait-death-knight-frost.jpg", "hero":[{"name": "Deathbringer", "icon":"assets/hero-icons/deathbringer.png"}, { "name": "Rider of the Apocalypse", "icon":"assets/hero-icons/rider-of-the-apocalypse-ph.png"}]},
-            {"name":"Unholy", "role":"meleedps", "icon":"assets/spec-icons/spec-portrait-death-knight-unholy.jpg", "hero":[{ "name": "Rider of the Apocalypse", "icon":"assets/hero-icons/rider-of-the-apocalypse-ph.png"}, { "name": "San'layn", "icon":"assets/hero-icons/sanlayn.png"}]}
+            {"name":"Unholy", "role":"meleedps", "icon":"assets/spec-icons/spec-portrait-death-knight-unholy.jpg", "hero":[{ "name": "Rider of the Apocalypse", "icon":"assets/hero-icons/rider-of-the-apocalypse-ph.png"}, { "name": "Sanlayn", "icon":"assets/hero-icons/sanlayn.png"}]}
         ],
         "races": [
             { "name": "Orc", "faction": "horde", "icon":"assets/race-icons/Orc_Crest.png"},

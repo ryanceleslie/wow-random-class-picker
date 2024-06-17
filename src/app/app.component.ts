@@ -123,6 +123,11 @@ export class AppComponent {
       return;
     }
 
+    if(!this.allianceFilter && !this.hordeFilter) {
+      alert('Select at least one faction');
+      return;
+    }
+
     fetch(this.url).then(response => response.json())
       .then(results => {
 
