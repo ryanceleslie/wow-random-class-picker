@@ -62,7 +62,7 @@
             { "name": "Zandalari Troll", "faction": "horde", "icon":"assets/race-icons/1024px-Zandalari_crest.png"},
             { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
             { "name": "Worgen", "faction": "alliance", "icon":"assets/race-icons/1024px-Worgen-Icon.png"},
-            { "name": "Kul Tiran", "icon":"assets/race-icons/800px-Kul_Tiran_crest.png"}
+            { "name": "Kul Tiran", "faction": "alliance", "icon":"assets/race-icons/800px-Kul_Tiran_crest.png"}
         ]
     },
     {
