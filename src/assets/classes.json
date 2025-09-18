@@ -43,7 +43,8 @@
         ],
         "races": [
             { "name": "Blood Elf", "faction": "horde", "icon":"assets/race-icons/Icon_of_Blood.png"},
-            { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"}
+            { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
+            { "name": "Void Elf", "faction": "alliance", "icon":"assets/race-icons/Void_Elf_Crest.png"}
         ]
     },
     {
@@ -102,6 +103,8 @@
             { "name": "Alliance Pandaren", "faction": "alliance", "icon":"assets/race-icons/Pandaren_Crest.png"},
             { "name": "Horde Earthen", "faction": "horde", "icon":"assets/race-icons/Earthen_Crest.png"},
             { "name": "Alliance Earthen", "faction": "alliance", "icon":"assets/race-icons/Earthen_Crest.png"},
+            { "name": "Horde Dracthyr", "faction": "horde", "icon":"assets/race-icons/Dracthyr_Crest.png"},
+            { "name": "Alliance Dracthyr", "faction": "alliance", "icon":"assets/race-icons/Dracthyr_Crest.png"}
             { "name": "Human", "faction": "alliance", "icon":"assets/race-icons/Human_Crest.png"},
             { "name": "Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dwarf_Crest.png"},
             { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
@@ -139,6 +142,8 @@
             { "name": "Alliance Pandaren", "faction": "alliance", "icon":"assets/race-icons/Pandaren_Crest.png"},
             { "name": "Horde Earthen", "faction": "horde", "icon":"assets/race-icons/Earthen_Crest.png"},
             { "name": "Alliance Earthen", "faction": "alliance", "icon":"assets/race-icons/Earthen_Crest.png"},
+            { "name": "Horde Dracthyr", "faction": "horde", "icon":"assets/race-icons/Dracthyr_Crest.png"},
+            { "name": "Alliance Dracthyr", "faction": "alliance", "icon":"assets/race-icons/Dracthyr_Crest.png"}
             { "name": "Human", "faction": "alliance", "icon":"assets/race-icons/Human_Crest.png"},
             { "name": "Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dwarf_Crest.png"},
             { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
@@ -174,6 +179,8 @@
             { "name": "Vulpera", "faction": "horde", "icon":"assets/race-icons/Vulpera_crest.png"},
             { "name": "Horde Pandaren", "faction": "horde", "icon":"assets/race-icons/Pandaren_Crest.png"},
             { "name": "Alliance Pandaren", "faction": "alliance", "icon":"assets/race-icons/Pandaren_Crest.png"},
+            { "name": "Horde Earthen", "faction": "horde", "icon":"assets/race-icons/Earthen_Crest.png"},
+            { "name": "Alliance Earthen", "faction": "alliance", "icon":"assets/race-icons/Earthen_Crest.png"},
             { "name": "Human", "faction": "alliance", "icon":"assets/race-icons/Human_Crest.png"},
             { "name": "Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dwarf_Crest.png"},
             { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
@@ -232,6 +239,8 @@
             { "name": "Alliance Pandaren", "faction": "alliance", "icon":"assets/race-icons/Pandaren_Crest.png"},
             { "name": "Horde Earthen", "faction": "horde", "icon":"assets/race-icons/Earthen_Crest.png"},
             { "name": "Alliance Earthen", "faction": "alliance", "icon":"assets/race-icons/Earthen_Crest.png"},
+            { "name": "Horde Dracthyr", "faction": "horde", "icon":"assets/race-icons/Dracthyr_Crest.png"},
+            { "name": "Alliance Dracthyr", "faction": "alliance", "icon":"assets/race-icons/Dracthyr_Crest.png"}
             { "name": "Human", "faction": "alliance", "icon":"assets/race-icons/Human_Crest.png"},
             { "name": "Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dwarf_Crest.png"},
             { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
@@ -269,6 +278,8 @@
             { "name": "Alliance Pandaren", "faction": "alliance", "icon":"assets/race-icons/Pandaren_Crest.png"},
             { "name": "Horde Earthen", "faction": "horde", "icon":"assets/race-icons/Earthen_Crest.png"},
             { "name": "Alliance Earthen", "faction": "alliance", "icon":"assets/race-icons/Earthen_Crest.png"},
+            { "name": "Horde Dracthyr", "faction": "horde", "icon":"assets/race-icons/Dracthyr_Crest.png"},
+            { "name": "Alliance Dracthyr", "faction": "alliance", "icon":"assets/race-icons/Dracthyr_Crest.png"}
             { "name": "Human", "faction": "alliance", "icon":"assets/race-icons/Human_Crest.png"},
             { "name": "Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dwarf_Crest.png"},
             { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
@@ -333,6 +344,8 @@
             { "name": "Alliance Pandaren", "faction": "alliance", "icon":"assets/race-icons/Pandaren_Crest.png"},
             { "name": "Horde Earthen", "faction": "horde", "icon":"assets/race-icons/Earthen_Crest.png"},
             { "name": "Alliance Earthen", "faction": "alliance", "icon":"assets/race-icons/Earthen_Crest.png"},
+            { "name": "Horde Dracthyr", "faction": "horde", "icon":"assets/race-icons/Dracthyr_Crest.png"},
+            { "name": "Alliance Dracthyr", "faction": "alliance", "icon":"assets/race-icons/Dracthyr_Crest.png"}
             { "name": "Human", "faction": "alliance", "icon":"assets/race-icons/Human_Crest.png"},
             { "name": "Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dwarf_Crest.png"},
             { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
@@ -370,6 +383,8 @@
             { "name": "Alliance Pandaren", "faction": "alliance", "icon":"assets/race-icons/Pandaren_Crest.png"},
             { "name": "Horde Earthen", "faction": "horde", "icon":"assets/race-icons/Earthen_Crest.png"},
             { "name": "Alliance Earthen", "faction": "alliance", "icon":"assets/race-icons/Earthen_Crest.png"},
+            { "name": "Horde Dracthyr", "faction": "horde", "icon":"assets/race-icons/Dracthyr_Crest.png"},
+            { "name": "Alliance Dracthyr", "faction": "alliance", "icon":"assets/race-icons/Dracthyr_Crest.png"}
             { "name": "Human", "faction": "alliance", "icon":"assets/race-icons/Human_Crest.png"},
             { "name": "Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dwarf_Crest.png"},
             { "name": "Night Elf", "faction": "alliance", "icon":"assets/race-icons/Night_Elf_Crest.png"},
