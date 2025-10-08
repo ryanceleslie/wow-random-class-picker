@@ -317,7 +317,7 @@
             { "name": "Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dwarf_Crest.png"},
             { "name": "Draenei", "faction": "alliance", "icon":"assets/race-icons/Draenei_Crest.png"},
             { "name": "Dark Iron Dwarf", "faction": "alliance", "icon":"assets/race-icons/Dark_Iron_crest.png"},
-            { "name": "Kul Tiran", "icon":"assets/race-icons/800px-Kul_Tiran_crest.png"}
+            { "name": "Kul Tiran", "faction": "alliance", "icon":"assets/race-icons/800px-Kul_Tiran_crest.png"}
         ]
     },
     {
